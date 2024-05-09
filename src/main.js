@@ -19,7 +19,19 @@ import App from './App.vue'
 // const router = new VueRouter({
 //   routes
 // })
+
 Vue.config.productionTip = false;
+// Create Filters 
+
+Vue.filter("uCase", function(val) {
+  return val.toUpperCase()
+})
+Vue.filter("lCase", function(val) {
+  return val.toLowerCase()
+})
+Vue.filter("currencyConvert", function(val) {
+  return val * 75
+})
 
 new Vue({
   // router: router,

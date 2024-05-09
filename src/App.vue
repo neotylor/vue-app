@@ -1,23 +1,30 @@
 <template>
-  <div id="app1">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <!-- <LifeCycle /> -->
-    <PageNotFound />
+  <div id="app">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <HomePage data="Hello From props" /> -->
+    <!-- <LoginPage /> -->
+    <LifeCycle />
+    <!-- <PageNotFound /> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-// import LifeCycle from './components/lifecycle/LifeCycle.vue'
-import PageNotFound from './pages/default/PageNotFound.vue';
+// import HomePage from "./components/HomePage.vue";
+// import LoginPage from "./components/Login.vue";
+import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
+// import PageNotFound from './pages/default/PageNotFound.vue';
+/* Lifecycle hooks example */
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    // LifeCycle,
-    PageNotFound
+    // HomePage, 
+    // LoginPage,
+    LifeCycle,
+    // PageNotFound
   }
 }
 </script>
@@ -27,8 +34,9 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  
 }
+/* font-family: monospace; */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
