@@ -6,7 +6,8 @@
     <!-- <LoginPage /> -->
     <!-- <LifeCycle /> -->
     <!-- <PageNotFound /> -->
-    <EmployeesList />
+    <!-- <EmployeesList /> -->
+    <ActiveBoot />
   </div>
 </template>
 
@@ -17,7 +18,8 @@
 // import PageNotFound from './pages/default/PageNotFound.vue';
 /* Lifecycle hooks example */
 // import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
-import EmployeesList from "./components/apiExamples/EmployeesList.vue";
+// import EmployeesList from "./components/apiExamples/EmployeesList.vue";
+import ActiveBoot from './components/bootstrapExamples/ActiveBoot.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     // LoginPage,
     // LifeCycle,
     // PageNotFound,
-    EmployeesList,
+    // EmployeesList,
+    ActiveBoot,
   }
 }
 </script>
