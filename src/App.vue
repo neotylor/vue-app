@@ -4,8 +4,9 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <HomePage data="Hello From props" /> -->
     <!-- <LoginPage /> -->
-    <LifeCycle />
+    <!-- <LifeCycle /> -->
     <!-- <PageNotFound /> -->
+    <EmployeesList />
   </div>
 </template>
 
@@ -13,9 +14,10 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import HomePage from "./components/HomePage.vue";
 // import LoginPage from "./components/Login.vue";
-import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
 // import PageNotFound from './pages/default/PageNotFound.vue';
 /* Lifecycle hooks example */
+// import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
+import EmployeesList from "./components/apiExamples/EmployeesList.vue";
 
 export default {
   name: 'App',
@@ -23,8 +25,9 @@ export default {
     // HelloWorld,
     // HomePage, 
     // LoginPage,
-    LifeCycle,
-    // PageNotFound
+    // LifeCycle,
+    // PageNotFound,
+    EmployeesList,
   }
 }
 </script>
