@@ -8,11 +8,24 @@
     <!-- <PageNotFound /> -->
     <!-- <EmployeesList /> -->
     <!-- <ActiveBoot /> -->
-    <APITest/>
+    <!-- <APITest /> -->
+      <h1>Hello App!</h1>
+      <p>
+        <!-- <strong>Current route path:</strong> {{ $route.fullPath }} -->
+      </p>
+      <nav>
+        <RouterLink to="/">Go to Home</RouterLink>
+        <RouterLink to="/about">Go to About</RouterLink>
+      </nav>
+      <main>
+        <RouterView />
+      </main>
   </div>
 </template>
 
 <script>
+// import { RouterLink, RouterView } from 'vue-router';
+
 // import HelloWorld from './components/HelloWorld.vue'
 // import HomePage from "./components/HomePage.vue";
 // import LoginPage from "./components/Login.vue";
@@ -21,7 +34,7 @@
 // import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
 // import EmployeesList from "./components/apiExamples/EmployeesList.vue";
 // import ActiveBoot from './components/bootstrapExamples/ActiveBoot.vue';
-import APITest from './components/apiExamples/APITest.vue';
+// import APITest from './components/apiExamples/APITest.vue';
 
 export default {
   name: 'App',
@@ -33,7 +46,9 @@ export default {
     // PageNotFound,
     // EmployeesList,
     // ActiveBoot,
-    APITest,
+    // APITest,
+    // RouterView,
+    // RouterLink,
   }
 }
 </script>
@@ -43,8 +58,9 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
+
 /* font-family: monospace; */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

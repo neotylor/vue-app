@@ -1,28 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-// import VueRouter from 'vue-router'
-// import LifeCycle from './components/lifecycle/LifeCycle.vue'
-// import PageNotFound from './pages/default/PageNotFound.vue'
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-// Vue.use(VueRouter)
-
-// const routes = [
-//   {
-//     path: '/',
-//     components: LifeCycle,
-//   },
-//   {
-//     path: '/404',
-//     components: PageNotFound
-//   }
-// ]
-// const router = new VueRouter({
-//   routes
-// })
+import router from './router'
+import { RouterLink, RouterView } from 'vue-router';
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
@@ -43,6 +26,8 @@ Vue.filter("currencyConvert", function(val) {
 })
 
 new Vue({
-  // router: router,
+  router,
   render: h => h(App),
 }).$mount('#app')
+.component('RouterLink', RouterLink)
+.component('RouterView', RouterView)
