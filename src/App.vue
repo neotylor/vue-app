@@ -7,7 +7,8 @@
     <!-- <LifeCycle /> -->
     <!-- <PageNotFound /> -->
     <!-- <EmployeesList /> -->
-    <ActiveBoot />
+    <!-- <ActiveBoot /> -->
+    <APITest/>
   </div>
 </template>
 
@@ -19,7 +20,8 @@
 /* Lifecycle hooks example */
 // import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
 // import EmployeesList from "./components/apiExamples/EmployeesList.vue";
-import ActiveBoot from './components/bootstrapExamples/ActiveBoot.vue';
+// import ActiveBoot from './components/bootstrapExamples/ActiveBoot.vue';
+import APITest from './components/apiExamples/APITest.vue';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     // LifeCycle,
     // PageNotFound,
     // EmployeesList,
-    ActiveBoot,
+    // ActiveBoot,
+    APITest,
   }
 }
 </script>
