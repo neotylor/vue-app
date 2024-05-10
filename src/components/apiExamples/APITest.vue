@@ -1,16 +1,18 @@
 <template>
   <div>
     <h1>API Test components</h1>
-    <PostAPITest/>
+    <!-- <PostAPITest/> -->
+    <DeleteAPITest/>
   </div>
 </template>
 
 <script>
-import PostAPITest from './PostAPITest.vue';
+// import PostAPITest from './PostAPITest.vue';
+import DeleteAPITest from './DeleteAPITest.vue';
 export default {
   name: 'APITest',
   components: {
-    PostAPITest,
+    DeleteAPITest,
   }
 }
 </script>
