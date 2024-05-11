@@ -55,5 +55,6 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   mode: "history",
+  base: process.env.NODE_ENV === 'production'? '/vue-app/': '/',
   routes
 });
