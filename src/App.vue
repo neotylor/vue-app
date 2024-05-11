@@ -9,17 +9,24 @@
     <!-- <EmployeesList /> -->
     <!-- <ActiveBoot /> -->
     <!-- <APITest /> -->
-      <h1>Hello App!</h1>
-      <p>
-        <!-- <strong>Current route path:</strong> {{ $route.fullPath }} -->
-      </p>
-      <nav>
+    <h1>Hello App!</h1>
+    <p>
+      <!-- <strong>Current route path:</strong> {{ $route.fullPath }} -->
+    </p>
+    <!-- <nav>
         <RouterLink to="/">Go to Home</RouterLink>
         <RouterLink to="/about">Go to About</RouterLink>
       </nav>
       <main>
         <RouterView />
-      </main>
+      </main> -->
+    <nav>
+      <router-link to="/"> Home </router-link>
+      <router-link to="/about"> about </router-link>
+      <router-link to="/contect"> contect </router-link>
+      <router-link to="/post"> post </router-link>
+    </nav>
+    <router-view />
   </div>
 </template>
 

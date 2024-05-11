@@ -5,7 +5,7 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router'
-import { RouterLink, RouterView } from 'vue-router';
+// import { RouterLink, RouterView } from 'vue-router';
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
@@ -29,5 +29,5 @@ new Vue({
   router,
   render: h => h(App),
 }).$mount('#app')
-.component('RouterLink', RouterLink)
-.component('RouterView', RouterView)
+// .component('RouterLink', RouterLink)
+// .component('RouterView', RouterView)
