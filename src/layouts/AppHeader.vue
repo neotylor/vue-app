@@ -1,0 +1,97 @@
+<template>
+  <nav role="navigation">
+    <ul>
+      <li>
+        <router-link to="/"> Home </router-link>
+      </li>
+      <li>
+        <router-link to="/about"> about </router-link>
+      </li>
+      <li>
+        <router-link to="/contect"> contect </router-link>
+      </li>
+      <li>
+        <router-link to="/post"> post </router-link>
+      </li>
+      <li><router-link to="/examples"> examples </router-link>
+        <ul class="dropdown">
+          <li><router-link to="/examples/life-cycle-methods"> Life Cycle </router-link></li>
+          <li><router-link to="/examples/bootstrap-example"> bootstrap example </router-link></li>
+          <li><router-link to="/examples/api-examples"> api examples</router-link></li>
+        </ul>
+      </li>
+      <li>
+        <router-link to="/xyz"> rendom </router-link>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "AppHeader",
+
+}
+</script>
+
+<style scoped>
+a {
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: #333;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-transform: capitalize;
+}
+
+li {
+  color: #fff;
+  background: #333;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0.5rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+</style>

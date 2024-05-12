@@ -1,31 +1,19 @@
 <template>
   <div id="app">
+    <router-view name="header"/>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <HomePage data="Hello From props" /> -->
     <!-- <LoginPage /> -->
-    <!-- <LifeCycle /> -->
     <!-- <PageNotFound /> -->
     <!-- <EmployeesList /> -->
-    <!-- <ActiveBoot /> -->
     <!-- <APITest /> -->
-    <h1>Hello App!</h1>
-    <p>
+    <!-- <h1>Hello App!</h1> -->
+    <!-- <p> -->
       <!-- <strong>Current route path:</strong> {{ $route.fullPath }} -->
-    </p>
-    <!-- <nav>
-        <RouterLink to="/">Go to Home</RouterLink>
-        <RouterLink to="/about">Go to About</RouterLink>
-      </nav>
-      <main>
-        <RouterView />
-      </main> -->
-    <nav>
-      <router-link to="/"> Home </router-link>
-      <router-link to="/about"> about </router-link>
-      <router-link to="/contect"> contect </router-link>
-      <router-link to="/post"> post </router-link>
-    </nav>
+    <!-- </p> -->
+
+
     <router-view />
   </div>
 </template>
@@ -37,10 +25,8 @@
 // import HomePage from "./components/HomePage.vue";
 // import LoginPage from "./components/Login.vue";
 // import PageNotFound from './pages/default/PageNotFound.vue';
-/* Lifecycle hooks example */
-// import LifeCycle from './components/lifecycleMethods/LifeCycle.vue'
+
 // import EmployeesList from "./components/apiExamples/EmployeesList.vue";
-// import ActiveBoot from './components/bootstrapExamples/ActiveBoot.vue';
 // import APITest from './components/apiExamples/APITest.vue';
 
 export default {
@@ -52,7 +38,6 @@ export default {
     // LifeCycle,
     // PageNotFound,
     // EmployeesList,
-    // ActiveBoot,
     // APITest,
     // RouterView,
     // RouterLink,
@@ -61,15 +46,14 @@ export default {
 </script>
 
 <style>
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /* font-family: monospace; */
-#app {
+#app1 {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

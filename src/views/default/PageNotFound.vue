@@ -13,7 +13,7 @@
           <div class="text-area">
             <h1 v-bind:style="{'textShadow': `${x / 2}px 50px 10px #1b1b1b55`}">404</h1>
             <p>Uh! look like you got lost. <br>go back home</p>
-            <button class="btn"><a href="#">Home</a></button>
+            <button class="btn"><router-link to="/"> Home </router-link></button>
           </div>
         </div>
       </div>
