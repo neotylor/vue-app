@@ -21,7 +21,7 @@
         </ul>
       </li>
       <li>
-        <router-link to="/xyz"> rendom </router-link>
+        <router-link v-bind:to="randomUrl"> rendom </router-link>
       </li>
     </ul>
   </nav>
@@ -30,7 +30,16 @@
 <script>
 export default {
   name: "AppHeader",
-
+  data() {  
+    return {
+      randomUrl: this.getRendomUrl(),
+    }
+  },
+  methods: {
+    getRendomUrl() {
+      return `/${(Math.random() + 1).toString(36).substring(7)}`;
+    }
+  }
 }
 </script>
 
