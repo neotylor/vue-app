@@ -30,10 +30,10 @@
           <td>{{ user?.username }}</td>
           <td class="d-flex gap-2">
             <b-button type="button" variant="danger" v-on:click="removeUser(user.id)">Remove</b-button>
-            <router-link to="./user/1">
+            <router-link v-bind:to="`./user/${user.id}`">
               <b-button type="button" variant="primary">View</b-button>
             </router-link>
-            <router-link to="./user/1/edit">
+            <router-link v-bind:to="`./user/${user.id}/edit`">
               <b-button type="button" variant="primary">Edit</b-button>
             </router-link>
           </td>
