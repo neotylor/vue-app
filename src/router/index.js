@@ -12,6 +12,8 @@ import AppHeader from '../layouts/AppHeader.vue'
 import LifeCycle from '../components/lifecycleMethods/LifeCycle.vue'
 import ActiveBoot from '../components/bootstrapExamples/ActiveBoot.vue'
 import APITest from '../components/apiExamples/APITest.vue'
+import ListTest from '../components/apiExamples/Users/ListTest.vue'
+import UserTest from '../components/apiExamples/Users/UserTest.vue'
 
 // Define routes, Each routes should map to a component
 const routes = [
@@ -73,6 +75,26 @@ const routes = [
         path: '/examples/api-examples',
         name: 'APITest',
         component: APITest
+      },
+      {
+        path: '/examples/api-examples/users',
+        name: 'ListTest',
+        component: ListTest
+      },
+      {
+        path: '/examples/api-examples/users/new',
+        name: 'NewUser',
+        component: UserTest
+      },
+      {
+        path: '/examples/api-examples/user/:id',
+        name: 'UserTest',
+        component: UserTest
+      },
+      {
+        path: '/examples/api-examples/user/:id/edit',
+        name: 'UserEdit',
+        component: UserTest
       },
     ],
 

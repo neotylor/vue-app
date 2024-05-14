@@ -17,7 +17,12 @@
         <ul class="dropdown">
           <li><router-link to="/examples/life-cycle-methods"> Life Cycle </router-link></li>
           <li><router-link to="/examples/bootstrap-example"> bootstrap example </router-link></li>
-          <li><router-link to="/examples/api-examples"> api examples</router-link></li>
+          <li><router-link to="/examples/api-examples"> api examples</router-link>
+            <ul class="dropdown">
+              <li><router-link to="/examples/api-examples/users"> User List </router-link></li>
+              <li><router-link to="/examples/api-examples/users/new"> New User </router-link></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li>
@@ -30,7 +35,7 @@
 <script>
 export default {
   name: "AppHeader",
-  data() {  
+  data() {
     return {
       randomUrl: this.getRendomUrl(),
     }
@@ -102,5 +107,12 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
+}
+
+ul li:hover>ul ul,
+ul li ul:hover ul {
+  position: absolute;
+  left: 100%;
+  top: 0%;
 }
 </style>
