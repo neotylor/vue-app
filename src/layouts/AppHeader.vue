@@ -23,6 +23,7 @@
               <li><router-link to="/examples/api-examples/users/new"> New User </router-link></li>
             </ul>
           </li>
+          <li><router-link to="/examples/dynamic-component-example"> Dynamic Component example </router-link></li>
         </ul>
       </li>
       <li>

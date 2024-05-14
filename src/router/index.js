@@ -14,6 +14,7 @@ import ActiveBoot from '../components/bootstrapExamples/ActiveBoot.vue'
 import APITest from '../components/apiExamples/APITest.vue'
 import ListTest from '../components/apiExamples/Users/ListTest.vue'
 import UserTest from '../components/apiExamples/Users/UserTest.vue'
+import DynamicComponentExample from '../components/dynamicComponents/DynamicComponentExample.vue'
 
 // Define routes, Each routes should map to a component
 const routes = [
@@ -95,6 +96,11 @@ const routes = [
         path: '/examples/api-examples/user/:id/edit',
         name: 'UserEdit',
         component: UserTest
+      },
+      {
+        path: '/examples/dynamic-component-example',
+        name: 'DynamicComponentExample',
+        component: DynamicComponentExample
       },
     ],
 
