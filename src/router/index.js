@@ -15,6 +15,7 @@ import APITest from '../components/apiExamples/APITest.vue'
 import ListTest from '../components/apiExamples/Users/ListTest.vue'
 import UserTest from '../components/apiExamples/Users/UserTest.vue'
 import DynamicComponentExample from '../components/dynamicComponents/DynamicComponentExample.vue'
+import CustomDirectiveExample from '../components/custom-directive/CustomDirectiveExample.vue'
 
 // Define routes, Each routes should map to a component
 const routes = [
@@ -101,6 +102,11 @@ const routes = [
         path: '/examples/dynamic-component-example',
         name: 'DynamicComponentExample',
         component: DynamicComponentExample
+      },
+      {
+        path: '/examples/custom-directive-example',
+        name: 'CustomDirectiveExample',
+        component: CustomDirectiveExample
       },
     ],
 

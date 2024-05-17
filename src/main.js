@@ -23,7 +23,39 @@ Vue.filter("lCase", function(val) {
 Vue.filter("currencyConvert", function(val) {
   return val * 75
 })
-
+// custom directives
+// default values
+Vue.directive("size", {
+  // el, binding, vnode
+  bind(el) {
+    el.style.fontSize = "60px";
+  }
+})
+// with values
+Vue.directive("customSize", {
+  // el, binding, vnode
+  bind(el , binding) {
+    switch (binding.value) {
+      case 'small':
+        el.style.fontSize = "20px";
+      break;
+      case 'medium':
+        el.style.fontSize = "40px";
+      break;
+      case 'large':
+        el.style.fontSize = "80px";
+      break;
+      case 'big':
+        el.style.fontSize = "100px";
+      break;
+        
+      default:
+        el.style.fontSize = "60px";
+      break;
+    }
+    console.log(el, binding)
+  }
+})
 new Vue({
   router,
   render: h => h(App),
