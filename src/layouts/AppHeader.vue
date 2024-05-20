@@ -25,6 +25,7 @@
           </li>
           <li><router-link to="/examples/dynamic-component-example"> Dynamic Component example </router-link></li>
           <li><router-link to="/examples/custom-directive-example"> Custom Directive example </router-link></li>
+          <li><router-link to="/examples/data-passing-example"> Data Passing example </router-link></li>
         </ul>
       </li>
       <li>
